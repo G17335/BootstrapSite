@@ -2,72 +2,88 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-     crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-     crossorigin="anonymous">
-    </script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+	 crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+	 crossorigin="anonymous">
+
+	</script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="container bg-primary"><p class="text-center">Container</p>
-        <div class="row bg-secondary">
-            <div class="col-md-1 bg-info border"><p class="text-center">Column1</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column2</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column3</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column4</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column5</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column6</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column7</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column8</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column9</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column10</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column11</p></div>
-      <div class="col-md-1 bg-info border"><p class="text-center">Column12</p></div>
-        </div>
-    <div class="row bg-secondary">
-      <div class="col-md-2 bg-warning border"><p class="text-center">Column1</p></div>
-      <div class="col-md-2 bg-warning border"><p class="text-center">Column2</p></div>
-      <div class="col-md-2 bg-warning border"><p class="text-center">Column3</p></div>
-      <div class="col-md-2 bg-warning border"><p class="text-center">Column4</p></div>
-      <div class="col-md-2 bg-warning border"><p class="text-center">Column5</p></div>
-      <div class="col-md-2 bg-warning border"><p class="text-center">Column6</p></div>
-    </div>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap 4 Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
 
-    <div class="row bg-secondary">
-      <div class="col-md-3 bg-danger border"><p class="text-center">Column1</p></div>
-      <div class="col-md-3 bg-danger border"><p class="text-center">Column2</p></div>
-      <div class="col-md-3 bg-danger border"><p class="text-center">Column3</p></div>
-      <div class="col-md-3 bg-danger border"><p class="text-center">Column4</p></div>
-    </div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
 
-    <div class="row bg-secondary">
-      <div class="col-md-4 bg-success border"><p class="text-center">Column1</p></div>
-      <div class="col-md-4 bg-success border"><p class="text-center">Column2</p></div>
-      <div class="col-md-4 bg-success border"><p class="text-center">Column3</p></div>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
     </div>
-
-    <div class="row bg-secondary">
-      <div class="col-md-6 bg-info border"><p class="text-center">Column1</p></div>
-      <div class="col-md-6 bg-info border"><p class="text-center">Column2</p></div>
-    </div>
-
-    <div class="row bg-secondary">
-      <div class= "col-md-12 bg-secondary border"><p class="text-center">Column1</p></div>
+    <div class="col-sm-8">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
+</div>
 
-    
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
 
-  
-
-
-    <script src="script.js">
-    </script>
 </body>
-
 </html>
