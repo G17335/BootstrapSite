@@ -2,217 +2,192 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-     crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-     crossorigin="anonymous">
-    </script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+	 crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+	 crossorigin="anonymous">
+
+	</script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <header class="p-2 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a id="mainbutton" onclick="showMainPage()" class="nav-link px-2 text-white">Home</a></li>
+          <li><a id="projectbutton" onclick="showProjectPage()" class="nav-link px-2 text-white">My Projects</a></li>
+          <li><a id="journalbutton" onclick="showJournalPage()" class="nav-link px-2 text-white">My Journal</a></li>
 
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">Welcome to my Website</span>
-    </a>
-
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-    </ul>
+      </div>
+    </div>
   </header>
 
-  <div class="px-4 py-5 my-5 text-center">
-  <img class="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-  <h1 class="display-5 fw-bold">Centered hero</h1>
-  <div class="col-lg-6 mx-auto">
-    <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-      <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-    </div>
-  </div>
-  </div>
-
-  <!-- <div class="p-3 bg-white" style="width: 280px;">
-  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-    <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-    <span class="fs-5 fw-semibold">Collapsible</span>
-  </a>
-  <ul class="list-unstyled ps-0">
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-        Home
-      </button>
-      <div class="collapse show" id="home-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Overview</a></li>
-          <li><a href="#" class="link-dark rounded">Updates</a></li>
-          <li><a href="#" class="link-dark rounded">Reports</a></li>
-        </ul>
+  <main id="mainpage" class="container">
+    <div class="row mt-3 p-3 p-md-5 mb-4 text-white rounded bg-dark">
+      <div class="col-md-6">
+        <h1 class="display-4 fst-italic">Welcome to my Portfolio!</h1>
+        <p class="lead my-3">Hello! My name is Gabriel and welcome to my portfolio!</p>
       </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-        Dashboard
-      </button>
-      <div class="collapse" id="dashboard-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Overview</a></li>
-          <li><a href="#" class="link-dark rounded">Weekly</a></li>
-          <li><a href="#" class="link-dark rounded">Monthly</a></li>
-          <li><a href="#" class="link-dark rounded">Annually</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-        Orders
-      </button>
-      <div class="collapse" id="orders-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">New</a></li>
-          <li><a href="#" class="link-dark rounded">Processed</a></li>
-          <li><a href="#" class="link-dark rounded">Shipped</a></li>
-          <li><a href="#" class="link-dark rounded">Returned</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="border-top my-3"></li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-        Account
-      </button>
-      <div class="collapse" id="account-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">New...</a></li>
-          <li><a href="#" class="link-dark rounded">Profile</a></li>
-          <li><a href="#" class="link-dark rounded">Settings</a></li>
-          <li><a href="#" class="link-dark rounded">Sign out</a></li>
-        </ul>
-      </div>
-    </li>
-  </ul>
-  </div> -->
-
-  <div class="row g-5 py-5">
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-      </div>
-      <div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary">
-          Primary button
-        </a>
+      <div class="col-md-6">
+        <img src="hero.png" alt="" class="d-block mx-lg-auto img-fluid">
       </div>
     </div>
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="p-4 mb-4 fst-italic border-bottom">Content Space</h3>
+        <article class="blog-post">
+          <h2 class="blog-post-title">Content Space</h2>
+          <p class="blog-post-meta"></p>
+          <p></p>
+        </article>
       </div>
-      <div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary">
-          Primary button
-        </a>
+      <div class="col-md-4">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic">Content Space</h4>
+          <p class="mb-0"></p>
+        </div>
+          
+        <div class="p-4">
+          <h4 class="fst-italic">Content Space</h4>
+          <ol class="list-unstyled">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ol>
+        </div>
+        
       </div>
     </div>
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
-      </div>
-      <div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary">
-          Primary button
-        </a>
-      </div>
-    </div>
-  </div>
+  </main>
 
-  <div class="container py-5" id="custom-cards">
-  <h2 class="pb-2 border-bottom">Custom cards</h2>
+  <!-- Project Page -->
+  <div id="projectpage" class="container">
+    <div class="row mb-2">
 
-  <div class="row row-cols-3 align-items-stretch py-5">
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>Earth</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>3d</small>
-            </li>
-          </ul>
+      <!-- Project 1 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 1</strong>
+            <h3 class="mb-0">My Portfolio</h3>
+            <p class="card-text mb-auto">This is my first project that I completed in Module 1.</p>
+            <a href="https://g17335.github.io/FinalProject/" class="stretched-link">Click here to go to the page</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>Pakistan</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>4d</small>
-            </li>
-          </ul>
+      <!-- Project 2 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 1</strong>
+            <h3 class="mb-0">Wikipedia Page on the Alphabet</h3>
+            <p class="card-text mb-auto">Here is a Wikipedia-style page about the Alphabet and its history.</p>
+            <a href="https://g17335.github.io/FinalProject/wiki.html" class="stretched-link">Click here to go to the page</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>California</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>5d</small>
-            </li>
-          </ul>
+      <!-- Project 3 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
+            <h3 class="mb-0">JavaScript DJ Project</h3>
+            <p class="card-text mb-auto">This is a digital sound board created using JavaScript.</p>
+            <a href="https://g17335.github.io/JavascriptDJ/" class="stretched-link">Click here to go to the page</a>
+          </div>
         </div>
       </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
+            <h3 class="mb-0">Choose Your Own Adventure Story based on COVID-19</h3>
+            <p class="card-text mb-auto">This is a choose your own adventure game based on COVID-19. There are different choices which lead to different endings.</p>
+            <a href="https://g17335.github.io/JavaScript-CYOA-1/" class="stretched-link">Click here to go to the page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
+            <h3 class="mb-0">Resume on my Role Model</h3>
+            <p class="card-text mb-auto">This is a webpage about Formula 1 Driver Sebastian Vettel.</p>
+            <a href="https://g17335.github.io/ResumeProject/" class="stretched-link">Click here to go to the page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 3</strong>
+            <h3 class="mb-0">Phaser Game Project</h3>
+            <p class="card-text mb-auto">This is a platformer game that I made using the Phaser JS library.</p>
+            <a href="https://g17335.github.io/phaser-d4-starter-1/" class="stretched-link">Click here to go to the page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 3</strong>
+            <h3 class="mb-0">Chropleth Map of Children (0-4) who live in Singapore</h3>
+            <p class="card-text mb-auto">This is a Choropleth Map of children aged 0-4 who live in Singapore as of the year 2000. (Warning: page may take some time to load)</p>
+            <a href="https://g17335.github.io/SG-0-4-Map/" class="stretched-link">Click here to go to the page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 3</strong>
+            <h3 class="mb-0">Chropleth Map of Children (10-14) who live in Singapore</h3>
+            <p class="card-text mb-auto">This is another Choropleth Map of children who live in Singapore as of the year 2000. This time the children are aged between 10-14. (Warning: page may take some time to load)</p>
+            <a href="https://g17335.github.io/SG-10-14-Map/" class="stretched-link">Click here to go to the page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Module 3</strong>
+            <h3 class="mb-0">Chropleth Map of Japan</h3>
+            <p class="card-text mb-auto">This is another Choropleth Map of the amount of Japanese residents who live in each city as of the year 2005. (Warning: page may take some time to load)</p>
+            <a href="https://g17335.github.io/Japan-Map/" class="stretched-link">Click here to go to the page</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  
+  </div>
+
+  <!-- Journal Page -->
+
+  <div id="journalpage">
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shrGc3MecBS7Z2FzA?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  </div>
 
 
-    <script src="script.js">
-    </script>
+
 </body>
-
 </html>
